@@ -14,7 +14,7 @@ The design primarily consists of a ROM containing expanded keys and left/right d
 <p align="center">
   <em>a): Encryption Data Path</em> &emsp; <em>b): Decryption Data Path</em>
 </p>
-
+*Figure 1: Data Path*
 
 The design employs Finite State Machines (FSM), with diagrams depicted in Figure 2.
 
@@ -26,7 +26,7 @@ The design employs Finite State Machines (FSM), with diagrams depicted in Figure
 <p align="center">
   <em>a): Encryption FSM </em> &emsp; <em>b): Decryption FSM</em>
 </p>
-
+*Figure 2: FSM Diagram*
 ## Test Cases
 Test cases for design validation were created using Python, comprising 100 texts and their corresponding encrypted values stored in 'testCases.mem'. Each line in 'testCases.mem' contains the text and its encrypted text. The test bench feeds these inputs into the encryption and decryption modules, comparing outputs against expected values. Successful validation is indicated through results printed in the Vivado Tcl console window.
 
