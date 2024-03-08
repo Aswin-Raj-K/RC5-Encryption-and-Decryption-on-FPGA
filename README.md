@@ -4,7 +4,7 @@
 This repository contains the RTL (Register-Transfer Level) design implementation and validation for RC5-32/12/16 encryption and decryption. The encryption module is coded in VHDL while the decryption module is implemented in Verilog. Both modules have been rigorously validated using a test bench.
 
 ## Design
-The design primarily consists of a ROM containing expanded keys and left/right data-dependent rotate components. Architectural diagrams for both encryption and decryption modules are provided in Figure 1.
+The design primarily consists of a ROM containing expanded keys and left/right data-dependent rotate components. Architectural diagrams for both encryption and decryption modules are provided in Figure below,
 
 <p align="center">
   <img src="Figures/Encryption_DataPath.png" width="45%" />
@@ -14,9 +14,8 @@ The design primarily consists of a ROM containing expanded keys and left/right d
 <p align="center">
   <em>a): Encryption Data Path</em> &emsp; <em>b): Decryption Data Path</em>
 </p>
-*Figure 1: Data Path*
 
-The design employs Finite State Machines (FSM), with diagrams depicted in Figure 2.
+The design employs Finite State Machines (FSM), with diagrams depicted below,
 
 <p align="center">
   <img src="Figures/Encryption_FSM.png" width="45%" />
@@ -26,7 +25,7 @@ The design employs Finite State Machines (FSM), with diagrams depicted in Figure
 <p align="center">
   <em>a): Encryption FSM </em> &emsp; <em>b): Decryption FSM</em>
 </p>
-*Figure 2: FSM Diagram*
+
 ## Test Cases
 Test cases for design validation were created using Python, comprising 100 texts and their corresponding encrypted values stored in 'testCases.mem'. Each line in 'testCases.mem' contains the text and its encrypted text. The test bench feeds these inputs into the encryption and decryption modules, comparing outputs against expected values. Successful validation is indicated through results printed in the Vivado Tcl console window.
 
